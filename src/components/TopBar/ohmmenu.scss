@@ -1,0 +1,72 @@
+#ohm-menu-button {
+  padding: 12px;
+  svg {
+    margin-right: 3px;
+    color: inherit !important;
+  }
+}
+.ohm-menu-button-hover {
+  z-index: 9;
+}
+#ohm-popper,
+#ohm-popper-pending {
+  z-index: 10;
+  color: #f7941d;
+  background-color: #00000003;
+  backdrop-filter: blur(33px);
+  -webkit-backdrop-filter: blur(33px);
+  margin-top: 10px;
+  border-radius: 10px;
+  .MuiPaper-root.ohm-menu {
+    padding: 16px 6px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    max-width: 250px;
+    button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 4px;
+      padding-left: 16px;
+      &:not(:hover) {
+        background-color: #00000003 !important;
+        color: #f7941d;
+      }
+    }
+    a {
+      svg {
+        vertical-align: middle;
+        font-size: 20px;
+        margin-left: 3px;
+        color: #f7941d;
+      }
+    }
+    hr {
+      margin-bottom: 18px;
+      color: #f7941d;
+    }
+  }
+
+  .add-tokens {
+    > p {
+      margin: 15px 0px 5px 0px;
+      text-align: left;
+      color: #f7941d;
+      padding-left: 16px;
+    }
+    height: max-content !important;
+    width: 100%;
+    color: #f7941d;
+    button {
+      min-height: 70px !important;
+      text-align: center !important;
+      color: #f7941d;
+    }
+  }
+
+  .buy-tokens {
+    padding-bottom: 8px;
+    color: #f7941d;
+  }
+}
